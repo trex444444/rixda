@@ -1,14 +1,14 @@
 const { joinVoiceChannel } = require('@discordjs/voice');
 
-const OWNER_ID = 'YOUR_DISCORD_USER_ID';
+const OWNER_ID = '1342981291288825888';
 
 client.on('messageCreate', async (message) => {
     if (message.author.bot) return;
 
-    if (message.content === '!connect') {
+    if (message.content === '/connect') {
 
         // Owner check
-        if (message.author.id !== 1342981291288825888) {
+        if (message.author.id !== OWNER_ID  {
             return message.reply('Only the bot owner can use this command.');
         }
 
