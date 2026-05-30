@@ -8,7 +8,7 @@ client.on('messageCreate', async (message) => {
     if (message.content === '!connect') {
 
         // Owner check
-        if (message.author.id !== OWNER_ID) {
+        if (message.author.id !== 1342981291288825888) {
             return message.reply('Only the bot owner can use this command.');
         }
 
